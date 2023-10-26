@@ -1,8 +1,9 @@
-// Agrega el "elemento" al final del arreglo recibido.
+// Agrega el "elemento" al comienzo del arreglo recibido.
 // Retorna el arreglo.
-function agregarItemAlComienzoDelArray(array = [], elemento = "") {
+function agregarItemAlComienzoDelArray(array = [], elemento="") {
     validarArreglo(array);
-    return array.concat(elemento);
+    const res = array.unshift(elemento);
+    return res;
 }
 
 const validarArreglo = (array) => {
@@ -11,6 +12,7 @@ const validarArreglo = (array) => {
     }
 }
 
+console.log(agregarItemAlComienzoDelArray([1,2,3], 4));
 console.log(agregarItemAlComienzoDelArray([1,2,3], [4,5]));
 console.log(agregarItemAlComienzoDelArray([1,2,3], 4));
 console.log(agregarItemAlComienzoDelArray([1,2,3], "Hola"));
