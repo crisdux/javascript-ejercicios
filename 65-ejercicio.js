@@ -11,7 +11,6 @@ const products = [
   ];
   
   
-  
   const productsByCategory = (arr) => {
     return Object.groupBy(arr, ({category}) => category)
   }
