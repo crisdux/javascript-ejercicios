@@ -1,3 +1,4 @@
+// dado un numero n regresar true o false si es o no primo
 const isPrime = (n) => {
   if (n <= 1) {
     return false;
