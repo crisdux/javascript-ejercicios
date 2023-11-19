@@ -23,7 +23,3 @@ const getStringInfo = (str) => {
 
 console.log(getStringInfo("H3ll0 Wor1d")) // returns { LETTERS:  7, DIGITS: 3, SPACES: 1 }
 console.log(getStringInfo("Hola 159 mun#do, como? es1as")) // returns { LETTERS:  7, DIGITS: 3, SPACES: 1 }
-
-
-
-
